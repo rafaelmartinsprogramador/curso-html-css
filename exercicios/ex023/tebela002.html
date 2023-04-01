@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse; /* Borda se junta uma com a outra */
+            position: relative;
         }
         td, th {
             border: 1px solid black ;
@@ -23,6 +24,14 @@
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
         }
     </style>
 </head>
