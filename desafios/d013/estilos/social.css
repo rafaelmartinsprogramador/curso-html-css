@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ html { /* esconder barra de rolagem para firefox */
+    scrollbar-width: none;
+}
+
+ ::-webkit-scrollbar { /* esconder barra de rolagem */
+    display: none; 
+}
+
+/* SE PREFERIR USAR DESTA FORMA
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+*/
+
+ img {
+    width: 100vw;
+ }
+
+ a {
+    display: block; /* mostrar o ACESSE em baixo */
+    background-color: darkred;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: none;
+ }
+
+a:hover { /* quando passar o mouse em cima */
+    background-color: red;
+}
